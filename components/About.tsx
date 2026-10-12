@@ -10,7 +10,7 @@ const openingHours = [
   { day: "Thursday", time: "09:30 – 19:00" },
   { day: "Friday", time: "09:00 – 19:00" },
   { day: "Saturday", time: "09:00 – 19:00" },
-  { day: "Sunday", time: "Closed", closed: true },
+  { day: "Sunday", time: "09:30 – 18:00" },
 ] as const;
 
 export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
@@ -110,7 +110,7 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
                 <h3 id="hours-title">Opening Hours</h3>
               </div>
               {todayHours && (
-                <div className={`about__today${todayHours.time === "Closed" ? " is-closed" : ""}`}>
+                <div className="about__today">
                   <svg className="about__today-icon" viewBox="0 0 24 24" aria-hidden="true">
                     <rect x="3.5" y="5.5" width="17" height="15" rx="3" />
                     <path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17" />
@@ -127,10 +127,9 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
             <dl className="about__hours-list">
               {openingHours.map(({ day, time }) => {
                 const isToday = day === today;
-                const isClosed = time === "Closed";
                 return (
                   <div
-                    className={`${isClosed ? "is-closed" : ""}${isToday ? " is-today" : ""}`}
+                    className={isToday ? "is-today" : undefined}
                     key={day}
                   >
                     <dt>{day}{isToday && <small>Today</small>}</dt>
