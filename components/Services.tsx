@@ -6,7 +6,7 @@ const serviceCategories = [
     number: "01",
     title: "Pedicure",
     description: "Signature spa pedicures created for comfort, renewal, and a beautifully polished finish.",
-    image: "/image/services/pedicure.webp",
+    image: "/image/services/home-pedicure.webp",
     alt: "Relaxing professional pedicure care",
   },
   {
@@ -14,7 +14,7 @@ const serviceCategories = [
     number: "02",
     title: "Manicure",
     description: "Detailed hand and nail care with elegant finishes designed around your personal style.",
-    image: "/image/services/manicure.webp",
+    image: "/image/services/home-manicure.webp",
     alt: "Professional manicure treatment",
   },
   {
@@ -22,7 +22,7 @@ const serviceCategories = [
     number: "03",
     title: "Artificial Nails",
     description: "Refined length, strength, and structure with modern enhancement techniques and finishes.",
-    image: "/image/services/artificial-nails.webp",
+    image: "/image/services/home-artificial-nails.webp",
     alt: "Luxury artificial nail design",
   },
   {

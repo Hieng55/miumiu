@@ -32,6 +32,21 @@ await sharp(projectImage("about-us/three-diverse-female-students-holding-books-b
   .webp({ quality: 84, effort: 6 })
   .toFile(projectImage("about-us/student-discount-display.webp"));
 
+const homeServiceImages = [
+  ["pedicure new.png", "home-pedicure.webp"],
+  ["manicure new.png", "home-manicure.webp"],
+  ["ArtificialNails.png", "home-artificial-nails.webp"],
+];
+
+await Promise.all(
+  homeServiceImages.map(([source, output]) =>
+    sharp(projectImage(`services/${source}`))
+      .resize({ width: 1000, withoutEnlargement: true })
+      .webp({ quality: 82, effort: 6 })
+      .toFile(projectImage(`services/${output}`)),
+  ),
+);
+
 await Promise.all(
   Array.from({ length: 10 }, (_, index) => {
     const file = `gallery-${String(index + 1).padStart(2, "0")}.webp`;
