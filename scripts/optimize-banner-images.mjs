@@ -36,6 +36,8 @@ const homeServiceImages = [
   ["pedicure new.png", "home-pedicure.webp"],
   ["manicure new.png", "home-manicure.webp"],
   ["ArtificialNails.png", "home-artificial-nails.webp"],
+  ["faacial.jpg", "facial.webp"],
+  ["waxing.jpg", "waxing.webp"],
 ];
 
 await Promise.all(
