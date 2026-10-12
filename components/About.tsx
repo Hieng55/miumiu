@@ -10,7 +10,7 @@ const openingHours = [
   { day: "Thursday", time: "09:30 – 19:00" },
   { day: "Friday", time: "09:00 – 19:00" },
   { day: "Saturday", time: "09:00 – 19:00" },
-  { day: "Sunday", time: "09:30 – 18:00" },
+  { day: "Sunday", time: "09:00 – 19:00" },
 ] as const;
 
 export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
