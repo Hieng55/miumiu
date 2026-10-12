@@ -27,10 +27,10 @@ await sharp(projectImage("clear logo Miu Miu.png"))
   .webp({ quality: 84, alphaQuality: 90, effort: 6 })
   .toFile(projectImage("clear-logo.webp"));
 
-await sharp(projectImage("about-us/about-woman-red-nails.webp"))
-  .resize({ width: 1100, withoutEnlargement: true })
-  .webp({ quality: 78, effort: 6 })
-  .toFile(projectImage("about-us/about-woman-red-nails-display.webp"));
+await sharp(projectImage("about-us/portrait-young-college-student-holding-her-laptop.jpg"))
+  .resize({ width: 1400, withoutEnlargement: true })
+  .webp({ quality: 84, effort: 6 })
+  .toFile(projectImage("about-us/student-discount-display.webp"));
 
 await Promise.all(
   Array.from({ length: 10 }, (_, index) => {

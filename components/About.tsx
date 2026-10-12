@@ -37,20 +37,17 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
         <div className="about__visual">
           <div className="about__image about__image--main">
             <Image
-              src="/image/about-us/about-woman-red-nails-display.webp"
-              alt="Model presenting an elegant red manicure"
+              src="/image/about-us/student-discount-display.webp"
+              alt="Student holding a laptop"
               fill
               sizes="(max-width: 900px) 82vw, 520px"
             />
           </div>
 
-          <div className="about__image about__image--detail">
-            <Image
-              src="/image/about-us/about-nude-nails.webp"
-              alt="Elegant nude manicure and jewelry detail"
-              fill
-              sizes="(max-width: 600px) 42vw, 260px"
-            />
+          <div className="about__student-offer" aria-label="Student ID discount: 10 percent off">
+            <span>Student ID</span>
+            <strong>10%</strong>
+            <small>Off</small>
           </div>
 
           <div className="about__seal" aria-hidden="true">
