@@ -1,0 +1,13 @@
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Serve exported Next.js files and route directories directly.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Send unknown routes back to the static home page.
+  RewriteRule ^ index.html [L]
+</IfModule>
