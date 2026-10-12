@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Forum, Jost } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PromotionPopup from "@/components/PromotionPopup";
 import ScrollToTop from "@/components/ScrollToTop";
 import { siteConfig } from "@/lib/site";
 import "../styles.css";
@@ -69,6 +70,7 @@ export default function RootLayout({
       <body className={`${forum.variable} ${jost.variable}`}>
         <Header />
         {children}
+        <PromotionPopup />
         <ScrollToTop />
         <Footer />
       </body>
