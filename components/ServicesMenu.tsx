@@ -30,7 +30,7 @@ const categories: readonly ServiceCategory[] = [
     number: "01",
     title: "Pedicure",
     intro: "Five levels of foot and nail care, from a polished refresh to an extended relaxation ritual.",
-    image: "/image/services/pedicure.webp",
+    image: "/image/services/home-pedicure.webp",
     imageAlt: "Relaxing professional pedicure care",
     groups: [{
       title: "Pedicure treatments",
@@ -49,7 +49,7 @@ const categories: readonly ServiceCategory[] = [
     number: "02",
     title: "Manicure",
     intro: "Thoughtful hand and nail care with massage, hydration, and polish options for every schedule.",
-    image: "/image/services/manicure.webp",
+    image: "/image/services/home-manicure.webp",
     imageAlt: "Professional manicure treatment",
     groups: [{
       title: "Manicure treatments",
@@ -67,7 +67,7 @@ const categories: readonly ServiceCategory[] = [
     number: "03",
     title: "Artificial Nails",
     intro: "Full sets and fill-ins with acrylic, builder gel, Gel-X, ombre, glitter, and custom design options.",
-    image: "/image/services/artificial-nails.webp",
+    image: "/image/services/home-artificial-nails.webp",
     imageAlt: "Luxury artificial nail design",
     groups: [
       {
