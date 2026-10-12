@@ -222,7 +222,7 @@ const complimentaryDrinks = [
 
 export default function ServicesMenu() {
   return (
-    <main className="services-menu">
+    <main className="services-menu" id="main-content">
       <section className="services-menu__hero" aria-labelledby="services-menu-title">
         <p>Our complete menu</p>
         <h1 id="services-menu-title">Services made for<em>your kind of beautiful.</em></h1>

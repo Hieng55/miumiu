@@ -104,11 +104,13 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header
-      className={`site-header${hasSolidBackground ? " is-scrolled" : ""}${
-        isMenuOpen ? " is-menu-open" : ""
-      }`}
-    >
+    <>
+      <a className="skip-link" href="#main-content">Skip to main content</a>
+      <header
+        className={`site-header${hasSolidBackground ? " is-scrolled" : ""}${
+          isMenuOpen ? " is-menu-open" : ""
+        }`}
+      >
       <div className="header-shell">
         <nav className="desktop-nav desktop-nav--left" aria-label="Primary navigation">
           {primaryLinks.map((link) => (
@@ -187,7 +189,7 @@ export default function Header() {
             <br />
             Menlo Park, CA 94025
           </span>
-          <div className="social-links" aria-label="Social media">
+          <nav className="social-links" aria-label="Social media">
             <a
               href="https://www.facebook.com/miumiunaildesign/"
               target="_blank"
@@ -206,7 +208,7 @@ export default function Header() {
               <Instagram variant="mono" aria-hidden="true" />
               <span className="social-links__label">Instagram</span>
             </a>
-          </div>
+          </nav>
         </div>
       </div>
 
@@ -235,6 +237,7 @@ export default function Header() {
           );
         })}
       </nav>
-    </header>
+      </header>
+    </>
   );
 }

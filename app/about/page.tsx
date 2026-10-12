@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import About from "@/components/About";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "About Us | Miu Miu Nail Design",
-  description: "Learn about Miu Miu Nail Design and view our salon opening hours in Menlo Park.",
-  alternates: { canonical: "/about" },
-};
+export const metadata = createPageMetadata({
+  title: "About Our Salon",
+  description:
+    "Meet Miu Miu Nail Design, explore our approach to personalized nail and beauty care, and find current salon hours in Menlo Park.",
+  path: "/about/",
+});
 
 export default function AboutPage() {
-  return <main><About /></main>;
+  return <main id="main-content"><About headingLevel="h1" /></main>;
 }

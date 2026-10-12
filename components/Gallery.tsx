@@ -9,8 +9,9 @@ const galleryImages = Array.from({ length: 10 }, (_, index) => ({
   alt: `Miu Miu Nail Design gallery look ${index + 1}`,
 }));
 
-export default function Gallery() {
+export default function Gallery({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
   const [activeImage, setActiveImage] = useState<number | null>(null);
+  const Heading = headingLevel;
 
   const showPrevious = useCallback(() => {
     setActiveImage((current) =>
@@ -60,7 +61,7 @@ export default function Gallery() {
               <svg viewBox="0 0 58 8"><path d="M1 4h43" /><path d="m50 1 3 3-3 3-3-3 3-3Z" /></svg>
             </span>
           </p>
-          <h2 id="gallery-title">Details worth <em>showing off.</em></h2>
+          <Heading id="gallery-title">Details worth <em>showing off.</em></Heading>
           <p>
             Explore a selection of looks created at Miu Miu Nail Design. Select any
             image to view the full gallery.

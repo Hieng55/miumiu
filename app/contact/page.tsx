@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import Contact from "@/components/Contact";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Contact Us | Miu Miu Nail Design",
-  description: "Contact Miu Miu Nail Design in Menlo Park to reserve your appointment.",
-  alternates: { canonical: "/contact" },
-};
+export const metadata = createPageMetadata({
+  title: "Contact & Salon Hours",
+  description:
+    "Call Miu Miu Nail Design, check our opening hours, or plan a visit to 1150 El Camino Real in Menlo Park, California.",
+  path: "/contact/",
+});
 
 export default function ContactPage() {
-  return <main><Contact /></main>;
+  return <main id="main-content"><Contact headingLevel="h1" /></main>;
 }

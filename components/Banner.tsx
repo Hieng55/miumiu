@@ -188,7 +188,7 @@ export default function Banner() {
         </div>
       </div>
 
-      <div className="banner__social" aria-label="Social media links">
+      <nav className="banner__social" aria-label="Social media links">
         <span>Follow us</span>
         <a
           href="https://www.facebook.com/miumiunaildesign/"
@@ -208,9 +208,9 @@ export default function Banner() {
         >
           <img src="/icons/instagram.svg" alt="" aria-hidden="true" />
         </a>
-      </div>
+      </nav>
 
-      <div className="banner__pagination" aria-label="Banner slide controls">
+      <nav className="banner__pagination" aria-label="Banner slide controls">
         <button type="button" onClick={showPrevious} aria-label="Previous slide">
           <span aria-hidden="true">←</span> Prev
         </button>
@@ -231,7 +231,7 @@ export default function Banner() {
         <button type="button" onClick={showNext} aria-label="Next slide">
           Next <span aria-hidden="true">→</span>
         </button>
-      </div>
+      </nav>
     </section>
   );
 }

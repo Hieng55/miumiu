@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>© 2026 Miu Miu Nail Design. All rights reserved. Designed by TD Transactions LLC.</p>
-          <div className="footer__social" aria-label="Social media">
+          <nav className="footer__social" aria-label="Social media">
             <span>Follow us</span>
             <a href="https://www.facebook.com/miumiunaildesign/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <img src="/icons/facebook.svg" alt="" aria-hidden="true" />
@@ -79,7 +79,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/miumiunaildesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <img src="/icons/instagram.svg" alt="" aria-hidden="true" />
             </a>
-          </div>
+          </nav>
           <a href="https://miumiunaildesign.com/">miumiunaildesign.com</a>
         </div>
       </div>

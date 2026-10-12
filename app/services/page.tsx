@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import ServicesMenu from "@/components/ServicesMenu";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Services | Miu Miu Nail Design",
-  description: "Explore nail and beauty service categories at Miu Miu Nail Design in Menlo Park.",
-  alternates: { canonical: "/services" },
-};
+export const metadata = createPageMetadata({
+  title: "Nail & Beauty Services",
+  description:
+    "Browse manicures, pedicures, artificial nails, dipping services, facials, waxing, service details, and prices at our Menlo Park salon.",
+  path: "/services/",
+});
 
 export default function ServicesPage() {
   return <ServicesMenu />;

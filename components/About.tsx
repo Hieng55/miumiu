@@ -13,8 +13,9 @@ const openingHours = [
   { day: "Sunday", time: "Closed", closed: true },
 ] as const;
 
-export default function About() {
+export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
   const [today, setToday] = useState<string | null>(null);
+  const Heading = headingLevel;
 
   useEffect(() => {
     setToday(
@@ -69,10 +70,10 @@ export default function About() {
               <svg viewBox="0 0 58 8"><path d="M1 4h43" /><path d="m50 1 3 3-3 3-3-3 3-3Z" /></svg>
             </span>
           </p>
-          <h2 id="about-title">
+          <Heading id="about-title">
             Beauty that feels
             <em>uniquely yours.</em>
-          </h2>
+          </Heading>
           <p className="about__lead">
             We help every guest turn an idea into a polished look that feels
             personal—whether you prefer something timeless, modern, subtle, or
@@ -87,7 +88,7 @@ export default function About() {
             moment so you can leave feeling polished, refreshed, and confident.
           </p>
 
-          <div className="about__contact-list" aria-label="Salon contact information">
+          <address className="about__contact-list">
             <a href="/contact">
               <span className="about__contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 21s6-5.45 6-12a6 6 0 1 0-12 0c0 6.55 6 12 6 12Z"/><circle cx="12" cy="9" r="2.2"/></svg>
@@ -100,7 +101,7 @@ export default function About() {
               </span>
               <span><small>Call for an appointment</small><strong>(408) 960-3611</strong></span>
             </a>
-          </div>
+          </address>
 
           <div className="about__hours" aria-labelledby="hours-title">
             <div className="about__hours-heading">
@@ -140,12 +141,12 @@ export default function About() {
             </dl>
           </div>
 
-          <div className="about__socials" aria-label="Miu Miu Nail Design social media">
+          <div className="about__socials">
             <div className="about__socials-copy">
               <span>Follow our latest work</span>
               <p>Stay connected for new nail looks, salon updates, and inspiration for your next appointment.</p>
             </div>
-            <div className="about__socials-links">
+            <nav className="about__socials-links" aria-label="Social media links">
               <a href="https://www.facebook.com/miumiunaildesign/" target="_blank" rel="noopener noreferrer">
                 <img src="/icons/facebook.svg" alt="" aria-hidden="true" />
                 <span><strong>Facebook</strong><small>News & salon updates</small></span>
@@ -154,7 +155,7 @@ export default function About() {
                 <img src="/icons/instagram.svg" alt="" aria-hidden="true" />
                 <span><strong>Instagram</strong><small>Nail looks & inspiration</small></span>
               </a>
-            </div>
+            </nav>
           </div>
 
           <div className="about__actions">

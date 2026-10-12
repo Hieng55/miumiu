@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://miumiunaildesign.com
+Sitemap: https://miumiunaildesign.com/sitemap.xml
