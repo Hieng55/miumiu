@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/2iowhig_zccmk.css","style"]
+:HL["/_next/static/chunks/3zfwjj9qejwfa.css","style"]
 :HL["/icons/facebook.svg","image"]
 :HL["/icons/instagram.svg","image"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"VR8fiFWTf-9YpB6n1gw6S","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"DAHsARzGX0UmwWYXuG1TU","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

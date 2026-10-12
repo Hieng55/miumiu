@@ -77,14 +77,14 @@ export default function Services() {
         </header>
 
         <div className="services__list">
-          {serviceCategories.map((category, index) => (
+          {serviceCategories.map((category) => (
             <article className="service-card" key={category.title}>
               <div className="service-card__image">
                 <Image
                   src={category.image}
                   alt={category.alt}
                   fill
-                  loading={index < 2 ? "eager" : "lazy"}
+                  loading="lazy"
                   sizes="(max-width: 620px) 88vw, (max-width: 1100px) 44vw, 395px"
                 />
                 <span className="service-card__number">{category.number}</span>

@@ -5,8 +5,8 @@ import { useCallback, useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "/image/banner/banner-main.jpg",
-    frameImage: "/image/banner/frame-flower-nails.jpg",
+    image: "/image/banner/banner-main.webp",
+    frameImage: "/image/banner/frame-flower-nails.webp",
     alt: "Luxury white and gold manicure",
     eyebrow: "Miu Miu Nail Design · Menlo Park",
     title: "Modern Nails",
@@ -16,8 +16,8 @@ const slides = [
     note: "Manicure · Pedicure · Nail Design",
   },
   {
-    image: "/image/banner/banner-detail.jpg",
-    frameImage: "/image/banner/frame-manicure.jpg",
+    image: "/image/banner/banner-detail.webp",
+    frameImage: "/image/banner/frame-manicure.webp",
     alt: "Professional manicure treatment",
     eyebrow: "Care · Detail · Confidence",
     title: "Refined Care",
@@ -27,8 +27,8 @@ const slides = [
     note: "Clean details · Modern techniques",
   },
   {
-    image: "/image/banner/banner-treatment.jpg",
-    frameImage: "/image/banner/frame-spring-nails.jpg",
+    image: "/image/banner/banner-treatment.webp",
+    frameImage: "/image/banner/frame-spring-nails.webp",
     alt: "Relaxing nail salon manicure service",
     eyebrow: "Relax · Refresh · Renew",
     title: "Your Beauty",
@@ -84,7 +84,7 @@ export default function Banner() {
       onBlur={() => setIsPaused(false)}
     >
       <div className="banner__media">
-        {slides.map((item, index) => (
+        {slides.map((item, index) => (index === activeSlide || index === previousSlide) && (
           <Image
             className={`banner__background${
               index === activeSlide

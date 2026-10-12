@@ -6145,6 +6145,20 @@ a {
 }
 
 @media (max-width: 760px) {
+  .banner__background,
+  .banner__background.is-previous {
+    -webkit-clip-path: none;
+    clip-path: none;
+    transform: scale(1.025);
+    will-change: opacity, transform;
+  }
+
+  .banner__background.is-active {
+    -webkit-clip-path: none;
+    clip-path: none;
+    animation: banner-mobile-fade 850ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
   .banner__inner {
     flex-direction: column;
     gap: 18px;
@@ -6166,6 +6180,26 @@ a {
     background: linear-gradient(135deg, rgba(255, 248, 238, 0.18), rgba(74, 52, 38, 0.34));
     box-shadow: 0 16px 38px rgba(29, 19, 13, 0.2);
     animation: banner-fade-up 700ms 120ms ease both;
+  }
+}
+
+@keyframes banner-mobile-fade {
+  from {
+    opacity: 0;
+    transform: scale(1.015);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.045);
+  }
+}
+
+@media (max-width: 680px) {
+  .header-shell,
+  .mobile-app-nav {
+    -webkit-backdrop-filter: blur(12px) saturate(1.1);
+    backdrop-filter: blur(12px) saturate(1.1);
   }
 }
 
