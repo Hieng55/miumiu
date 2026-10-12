@@ -61,11 +61,12 @@ function AppNavIcon({ name }: { name: (typeof appLinks)[number]["icon"] }) {
 
 export default function Header() {
   const pathname = usePathname();
+  const normalizedPathname = pathname === "/" ? pathname : pathname.replace(/\/+$/, "");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const hasSolidBackground = pathname !== "/" || isScrolled;
+  const hasSolidBackground = normalizedPathname !== "/" || isScrolled;
   const activeAppTab = appLinks.findIndex(
-    (link) => link.href.startsWith("/") && pathname === link.href,
+    (link) => link.href.startsWith("/") && normalizedPathname === link.href,
   );
 
   useEffect(() => {
@@ -115,9 +116,9 @@ export default function Header() {
         <nav className="desktop-nav desktop-nav--left" aria-label="Primary navigation">
           {primaryLinks.map((link) => (
             <Link
-              className={`nav-link${pathname === link.href ? " is-active" : ""}`}
+              className={`nav-link${normalizedPathname === link.href ? " is-active" : ""}`}
               href={link.href}
-              aria-current={pathname === link.href ? "page" : undefined}
+              aria-current={normalizedPathname === link.href ? "page" : undefined}
               key={link.label}
             >
               {link.label}
@@ -137,7 +138,7 @@ export default function Header() {
 
         <nav className="desktop-nav desktop-nav--right" aria-label="Secondary navigation">
           {secondaryLinks.map((link) => link.href.startsWith("/") ? (
-            <Link className={`nav-link${pathname === link.href ? " is-active" : ""}`} href={link.href} key={link.label}>
+            <Link className={`nav-link${normalizedPathname === link.href ? " is-active" : ""}`} href={link.href} key={link.label}>
               {link.label}
             </Link>
           ) : (
@@ -166,10 +167,10 @@ export default function Header() {
         <nav className="mobile-menu__nav" aria-label="Mobile navigation">
           {mobileLinks.map((link, index) => {
             const content = <><span>{String(index + 1).padStart(2, "0")}</span>{link.label}</>;
-            const className = pathname === link.href ? "is-active" : undefined;
+            const className = normalizedPathname === link.href ? "is-active" : undefined;
 
             return link.href.startsWith("/") ? (
-              <Link href={link.href} className={className} aria-current={pathname === link.href ? "page" : undefined} onClick={closeMenu} key={link.label}>
+              <Link href={link.href} className={className} aria-current={normalizedPathname === link.href ? "page" : undefined} onClick={closeMenu} key={link.label}>
                 {content}
               </Link>
             ) : (
@@ -230,7 +231,7 @@ export default function Header() {
           />
         )}
         {appLinks.map((link) => {
-          const isActive = pathname === link.href;
+          const isActive = normalizedPathname === link.href;
 
           const className = `${isActive ? "is-active" : ""}${"featured" in link && link.featured ? " is-featured" : ""}`;
           const content = <><span><AppNavIcon name={link.icon} /></span><small>{link.label}</small></>;
