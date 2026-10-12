@@ -19,6 +19,7 @@ export const siteConfig = {
   sameAs: [
     "https://www.facebook.com/miumiunaildesign/",
     "https://www.instagram.com/miumiunaildesign/",
+    "https://www.yelp.com/biz/miu-miu-nail-design-menlo-park-2",
   ],
 } as const;
 

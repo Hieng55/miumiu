@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
 import { CalendarDays, House, Images, Menu, Phone, Sparkles, X } from "lucide-react";
-import { Facebook, Instagram } from "@thesvg/react";
+import { Facebook, Instagram, Yelp } from "@thesvg/react";
 
 type NavItem = {
   label: string;
@@ -207,6 +207,15 @@ export default function Header() {
             >
               <Instagram variant="mono" aria-hidden="true" />
               <span className="social-links__label">Instagram</span>
+            </a>
+            <a
+              href="https://www.yelp.com/biz/miu-miu-nail-design-menlo-park-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Yelp"
+            >
+              <Yelp variant="mono" aria-hidden="true" />
+              <span className="social-links__label">Yelp</span>
             </a>
           </nav>
         </div>

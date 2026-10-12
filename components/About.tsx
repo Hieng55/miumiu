@@ -155,6 +155,10 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
                 <img src="/icons/instagram.svg" alt="" aria-hidden="true" />
                 <span><strong>Instagram</strong><small>Nail looks & inspiration</small></span>
               </a>
+              <a href="https://www.yelp.com/biz/miu-miu-nail-design-menlo-park-2" target="_blank" rel="noopener noreferrer">
+                <img src="/icons/yelp.svg" alt="" aria-hidden="true" />
+                <span><strong>Yelp</strong><small>Reviews & guest feedback</small></span>
+              </a>
             </nav>
           </div>
 

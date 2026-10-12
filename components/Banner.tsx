@@ -208,6 +208,15 @@ export default function Banner() {
         >
           <img src="/icons/instagram.svg" alt="" aria-hidden="true" />
         </a>
+        <a
+          href="https://www.yelp.com/biz/miu-miu-nail-design-menlo-park-2"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Yelp"
+          title="Yelp"
+        >
+          <img src="/icons/yelp.svg" alt="" aria-hidden="true" />
+        </a>
       </nav>
 
       <nav className="banner__pagination" aria-label="Banner slide controls">

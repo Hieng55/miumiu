@@ -59,6 +59,9 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
               <a href="https://www.instagram.com/miumiunaildesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <img src="/icons/instagram.svg" alt="" aria-hidden="true" />
               </a>
+              <a href="https://www.yelp.com/biz/miu-miu-nail-design-menlo-park-2" target="_blank" rel="noopener noreferrer" aria-label="Yelp">
+                <img src="/icons/yelp.svg" alt="" aria-hidden="true" />
+              </a>
             </nav>
           </div>
         </div>
