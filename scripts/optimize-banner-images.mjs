@@ -27,7 +27,7 @@ await sharp(projectImage("clear logo Miu Miu.png"))
   .webp({ quality: 84, alphaQuality: 90, effort: 6 })
   .toFile(projectImage("clear-logo.webp"));
 
-await sharp(projectImage("about-us/portrait-young-college-student-holding-her-laptop.jpg"))
+await sharp(projectImage("about-us/three-diverse-female-students-holding-books-bags-smiling-together-university-campus.jpg"))
   .resize({ width: 1400, withoutEnlargement: true })
   .webp({ quality: 84, effort: 6 })
   .toFile(projectImage("about-us/student-discount-display.webp"));
