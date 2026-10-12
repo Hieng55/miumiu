@@ -1676,21 +1676,29 @@ a {
       radial-gradient(circle at 86% 8%, rgba(255, 255, 255, 0.54), transparent 24%),
       radial-gradient(circle at 8% 92%, rgba(201, 154, 82, 0.18), transparent 30%),
       #f4e6d0;
-    opacity: 0;
-    transform: translateY(-10px) scale(0.995);
+    opacity: 1;
+    -webkit-clip-path: circle(0 at var(--menu-reveal-x) var(--menu-reveal-y));
+    clip-path: circle(0 at var(--menu-reveal-x) var(--menu-reveal-y));
+    transform: none;
+    will-change: clip-path;
+    -webkit-transition:
+      -webkit-clip-path 720ms cubic-bezier(0.76, 0, 0.24, 1),
+      visibility 0s linear 720ms;
     transition:
-      opacity 320ms ease,
-      transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
-      visibility 0s linear 420ms;
+      clip-path 720ms cubic-bezier(0.76, 0, 0.24, 1),
+      visibility 0s linear 720ms;
   }
 
   .mobile-menu.is-open {
     visibility: visible;
-    opacity: 1;
-    transform: translateY(0) scale(1);
+    -webkit-clip-path: circle(150vmax at var(--menu-reveal-x) var(--menu-reveal-y));
+    clip-path: circle(150vmax at var(--menu-reveal-x) var(--menu-reveal-y));
+    transform: none;
+    -webkit-transition:
+      -webkit-clip-path 780ms cubic-bezier(0.76, 0, 0.24, 1),
+      visibility 0s linear 0s;
     transition:
-      opacity 320ms ease,
-      transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+      clip-path 780ms cubic-bezier(0.76, 0, 0.24, 1),
       visibility 0s linear 0s;
   }
 
