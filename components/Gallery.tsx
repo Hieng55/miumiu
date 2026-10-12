@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 
 const galleryImages = Array.from({ length: 10 }, (_, index) => ({
   src: `/image/gallery/gallery-${String(index + 1).padStart(2, "0")}.webp`,
+  thumbnail: `/image/gallery/thumb-gallery-${String(index + 1).padStart(2, "0")}.webp`,
   alt: `Miu Miu Nail Design gallery look ${index + 1}`,
 }));
 
@@ -76,9 +77,10 @@ export default function Gallery() {
               key={image.src}
             >
               <Image
-                src={image.src}
+                src={image.thumbnail}
                 alt={image.alt}
                 fill
+                loading="lazy"
                 sizes="(max-width: 620px) 46vw, (max-width: 1100px) 31vw, 240px"
               />
               <span className="gallery__item-overlay" aria-hidden="true">

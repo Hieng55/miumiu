@@ -10,6 +10,9 @@ const images = [
   ["frame-spring-nails.jpg", "frame-spring-nails.webp", 1000],
 ];
 
+const projectImage = (path) =>
+  fileURLToPath(new URL(`../public/image/${path}`, import.meta.url));
+
 await Promise.all(
   images.map(([source, output, width]) =>
     sharp(fileURLToPath(new URL(`../public/image/banner/${source}`, import.meta.url)))
@@ -17,4 +20,24 @@ await Promise.all(
       .webp({ quality: 80, effort: 5 })
       .toFile(fileURLToPath(new URL(`../public/image/banner/${output}`, import.meta.url))),
   ),
+);
+
+await sharp(projectImage("clear logo Miu Miu.png"))
+  .resize({ width: 420, withoutEnlargement: true })
+  .webp({ quality: 84, alphaQuality: 90, effort: 6 })
+  .toFile(projectImage("clear-logo.webp"));
+
+await sharp(projectImage("about-us/about-woman-red-nails.webp"))
+  .resize({ width: 1100, withoutEnlargement: true })
+  .webp({ quality: 78, effort: 6 })
+  .toFile(projectImage("about-us/about-woman-red-nails-display.webp"));
+
+await Promise.all(
+  Array.from({ length: 10 }, (_, index) => {
+    const file = `gallery-${String(index + 1).padStart(2, "0")}.webp`;
+    return sharp(projectImage(`gallery/${file}`))
+      .resize({ width: 640, height: 640, fit: "cover", withoutEnlargement: true })
+      .webp({ quality: 76, effort: 5 })
+      .toFile(projectImage(`gallery/thumb-${file}`));
+  }),
 );

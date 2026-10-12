@@ -36,7 +36,7 @@ export default function About() {
         <div className="about__visual">
           <div className="about__image about__image--main">
             <Image
-              src="/image/about-us/about-woman-red-nails.webp"
+              src="/image/about-us/about-woman-red-nails-display.webp"
               alt="Model presenting an elegant red manicure"
               fill
               sizes="(max-width: 900px) 82vw, 520px"

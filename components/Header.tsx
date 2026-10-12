@@ -69,11 +69,22 @@ export default function Header() {
   );
 
   useEffect(() => {
-    const updateHeader = () => setIsScrolled(window.scrollY > 24);
+    let animationFrame = 0;
+    const updateHeader = () => {
+      if (animationFrame) return;
+      animationFrame = window.requestAnimationFrame(() => {
+        const nextScrolled = window.scrollY > 24;
+        setIsScrolled((current) => current === nextScrolled ? current : nextScrolled);
+        animationFrame = 0;
+      });
+    };
 
-    updateHeader();
+    setIsScrolled(window.scrollY > 24);
     window.addEventListener("scroll", updateHeader, { passive: true });
-    return () => window.removeEventListener("scroll", updateHeader);
+    return () => {
+      window.removeEventListener("scroll", updateHeader);
+      window.cancelAnimationFrame(animationFrame);
+    };
   }, []);
 
   useEffect(() => {
@@ -114,10 +125,10 @@ export default function Header() {
 
         <Link className="brand" href="/" aria-label="Miu Miu Nail Design home">
           <Image
-            src="/image/clear logo Miu Miu.png"
+            src="/image/clear-logo.webp"
             alt="Miu Miu Nail Design"
-            width={1739}
-            height={1802}
+            width={420}
+            height={435}
             priority
           />
         </Link>

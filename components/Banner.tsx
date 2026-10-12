@@ -156,7 +156,7 @@ export default function Banner() {
         <div className="banner__contact">
           <span className="banner__contact-mark">
             <Image
-              src="/image/clear logo Miu Miu.png"
+              src="/image/clear-logo.webp"
               alt=""
               width={46}
               height={48}

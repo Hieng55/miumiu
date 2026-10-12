@@ -33,10 +33,11 @@ export default function Footer() {
           <div className="footer__brand">
             <a href="/" aria-label="Miu Miu Nail Design home">
               <Image
-                src="/image/clear logo Miu Miu.png"
+                src="/image/clear-logo.webp"
                 alt="Miu Miu Nail Design"
-                width={1739}
-                height={1802}
+                width={420}
+                height={435}
+                loading="lazy"
               />
             </a>
             <p>
