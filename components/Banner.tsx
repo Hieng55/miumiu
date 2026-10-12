@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const slides = [
   {
@@ -43,11 +43,24 @@ export default function Banner() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [previousSlide, setPreviousSlide] = useState<number | null>(null);
   const [isPaused, setIsPaused] = useState(false);
+  const backgroundImages = useRef<Array<HTMLImageElement | null>>([]);
+  const navigationRequest = useRef(0);
 
   const goToSlide = useCallback(
-    (index: number) => {
+    async (index: number) => {
       const nextSlide = (index + slides.length) % slides.length;
+      const request = ++navigationRequest.current;
       if (nextSlide === activeSlide) return;
+
+      const nextImage = backgroundImages.current[nextSlide];
+
+      // Keep the reveal from finishing behind an image that is still loading
+      // when the visitor navigates immediately after the first paint.
+      if (nextImage?.decode) {
+        await nextImage.decode().catch(() => undefined);
+      }
+
+      if (request !== navigationRequest.current) return;
 
       setPreviousSlide(activeSlide);
       setActiveSlide(nextSlide);
@@ -84,7 +97,7 @@ export default function Banner() {
       onBlur={() => setIsPaused(false)}
     >
       <div className="banner__media">
-        {slides.map((item, index) => (index === activeSlide || index === previousSlide) && (
+        {slides.map((item, index) => (
           <Image
             className={`banner__background${
               index === activeSlide
@@ -97,9 +110,13 @@ export default function Banner() {
             alt={index === activeSlide ? item.alt : ""}
             fill
             priority={index === 0}
+            loading={index === 0 ? undefined : "eager"}
             sizes="100vw"
             aria-hidden={index !== activeSlide}
             key={item.image}
+            ref={(image) => {
+              backgroundImages.current[index] = image;
+            }}
           />
         ))}
       </div>
