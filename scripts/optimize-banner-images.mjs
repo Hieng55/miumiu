@@ -30,7 +30,7 @@ await sharp(projectImage("clear logo Miu Miu.png"))
 await sharp(projectImage("about-us/Students Checking In at Chic Nail Salon.png"))
   .resize({ width: 1400, withoutEnlargement: true })
   .webp({ quality: 84, effort: 6 })
-  .toFile(projectImage("about-us/student-discount-display.webp"));
+  .toFile(projectImage("about-us/student-discount-salon.webp"));
 
 const homeServiceImages = [
   ["pedicure new.png", "home-pedicure.webp"],

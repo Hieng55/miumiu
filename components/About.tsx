@@ -37,7 +37,7 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
         <div className="about__visual">
           <div className="about__image about__image--main">
             <Image
-              src="/image/about-us/student-discount-display.webp"
+              src="/image/about-us/student-discount-salon.webp"
               alt="Friends presenting student IDs while checking in at the nail salon"
               fill
               sizes="(max-width: 900px) 82vw, 520px"
