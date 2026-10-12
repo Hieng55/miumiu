@@ -42,12 +42,11 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
               fill
               sizes="(max-width: 900px) 82vw, 520px"
             />
-          </div>
-
-          <div className="about__student-offer" aria-label="Student ID discount: 10 percent off">
-            <span>Student ID</span>
-            <strong>10%</strong>
-            <small>Off</small>
+            <div className="about__student-offer" aria-label="Student ID discount: 10 percent off">
+              <span>Student ID</span>
+              <strong>10%</strong>
+              <small>Off</small>
+            </div>
           </div>
 
           <div className="about__seal" aria-hidden="true">
