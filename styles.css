@@ -2136,23 +2136,23 @@ a {
 }
 
 .about__student-offer span {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
 }
 
 .about__student-offer strong {
   font-family: var(--font-forum), serif;
-  font-size: 78px;
+  font-size: 88px;
   font-weight: 400;
   line-height: 0.9;
 }
 
 .about__student-offer small {
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.34em;
+  letter-spacing: 0.3em;
 }
 
 .about__seal {
@@ -2721,16 +2721,18 @@ a {
   }
 
   .about__student-offer span {
-    font-size: 9px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
   }
 
   .about__student-offer strong {
-    font-size: 50px;
+    font-size: 58px;
   }
 
   .about__student-offer small {
     margin-top: 5px;
-    font-size: 9px;
+    font-size: 11px;
+    letter-spacing: 0.24em;
   }
 
   .about__seal {

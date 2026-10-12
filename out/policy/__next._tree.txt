@@ -1,5 +1,5 @@
 :HL["/_next/static/chunks/0ypbrhc3bwquf.css","style"]
-:HL["/_next/static/chunks/3uh43jauw2zhn.css","style"]
+:HL["/_next/static/chunks/1g6t2ej1218ln.css","style"]
 :HL["/_next/static/media/81cef6a21128489e-s.p.2csanl8cs02r-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/ec6b5b74cff4b0c1-s.p.2hcl1-0_mkckx.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/icons/facebook.svg","image"]
@@ -7,4 +7,4 @@
 :HL["/icons/yelp.svg","image"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"policy","h":64,"c":"$Q2"}]]
-0:{"b":"TgfqZ2BPA0yHywZWoewP8","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"7QJUI_BwIMnSyL49Gx6aP","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
