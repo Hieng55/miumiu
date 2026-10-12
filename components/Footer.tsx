@@ -23,7 +23,7 @@ export default function Footer() {
             <p>Make time for yourself</p>
             <h2>Your next beautiful set <em>starts here.</em></h2>
           </div>
-          <a href="tel:+14089603611">
+          <a href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9">
             Book an appointment
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg>
           </a>

@@ -47,7 +47,7 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
           </address>
 
           <div className="contact__actions">
-            <a className="contact__button" href="tel:+14089603611">Book an appointment <span>→</span></a>
+            <a className="contact__button" href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9">Book an appointment <span>→</span></a>
           </div>
 
           <div className="contact__social">

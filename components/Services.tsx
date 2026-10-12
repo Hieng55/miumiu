@@ -105,7 +105,7 @@ export default function Services() {
             <span>Not sure what to choose?</span>
             <strong>Our team will help you find the perfect service.</strong>
           </div>
-          <a href="tel:+14089603611">Book an appointment <span aria-hidden="true">→</span></a>
+          <a href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9">Book an appointment <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>

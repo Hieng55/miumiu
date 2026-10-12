@@ -159,7 +159,7 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
           </div>
 
           <div className="about__actions">
-            <a className="about__button" href="tel:+14089603611">
+            <a className="about__button" href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9">
               Book an appointment
             </a>
           </div>

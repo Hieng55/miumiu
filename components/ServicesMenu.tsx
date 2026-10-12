@@ -265,7 +265,7 @@ export default function ServicesMenu() {
                     <small>Clear pricing below</small>
                   </span>
                 </div>
-                <a href="tel:+14089603611">
+                <a href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9">
                   Book this category
                   <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg>
                 </a>
