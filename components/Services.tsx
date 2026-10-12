@@ -38,7 +38,7 @@ const serviceCategories = [
     number: "05",
     title: "Facial Relaxing Services",
     description: "Restorative facial experiences designed to cleanse, hydrate, and leave your skin refreshed.",
-    image: "/image/services/facial.webp",
+    image: "/image/services/facial-relaxing-new.webp",
     alt: "Relaxing facial and beauty care",
   },
   {
@@ -46,7 +46,7 @@ const serviceCategories = [
     number: "06",
     title: "Waxing Services",
     description: "Gentle, precise waxing care for a smooth finish and beautifully maintained appearance.",
-    image: "/image/services/waxing.webp",
+    image: "/image/services/waxing-new.webp",
     alt: "Professional beauty and waxing care",
   },
 ] as const;

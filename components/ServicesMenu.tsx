@@ -143,7 +143,7 @@ const categories: readonly ServiceCategory[] = [
     number: "05",
     title: "Facial Relaxing Services",
     intro: "Cleansing, exfoliation, hydration, massage, and targeted finishing steps for a refreshed complexion.",
-    image: "/image/services/facial.webp",
+    image: "/image/services/facial-relaxing-new.webp",
     imageAlt: "Relaxing facial and beauty care",
     groups: [{
       title: "Facial treatments",
@@ -159,7 +159,7 @@ const categories: readonly ServiceCategory[] = [
     number: "06",
     title: "Waxing Services",
     intro: "Focused waxing services plus practical nail and massage add-ons to complete your appointment.",
-    image: "/image/services/waxing.webp",
+    image: "/image/services/waxing-new.webp",
     imageAlt: "Professional beauty and waxing care",
     groups: [
       {
