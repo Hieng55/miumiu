@@ -23,6 +23,7 @@ const primaryLinks: NavItem[] = [
 
 const secondaryLinks: NavItem[] = [
   { label: "Contact us", href: "/contact" },
+  { label: "Policy", href: "/policy" },
   { label: "Booking", href: "https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9" },
   { label: "Directions", href: "/contact#location" },
 ];
@@ -34,6 +35,7 @@ const mobileLinks: NavItem[] = [
   { label: "Booking", href: "https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact us", href: "/contact" },
+  { label: "Policy", href: "/policy" },
   { label: "Directions", href: "/contact#location" },
 ];
 
