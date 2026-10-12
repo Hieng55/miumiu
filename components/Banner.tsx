@@ -147,9 +147,9 @@ export default function Banner() {
             </a>
             <a
               className="banner__button banner__button--secondary"
-              href="/contact"
+              href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9"
             >
-              Contact us
+              Booking
             </a>
           </div>
           <p className="banner__services">{slide.note}</p>
