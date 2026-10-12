@@ -3,14 +3,13 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const DISMISSED_KEY = "miumiu-grand-opening-popup-dismissed";
 const PROMOTION_END = Date.parse("2026-11-16T00:00:00-08:00");
 
 export default function PromotionPopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (Date.now() >= PROMOTION_END || sessionStorage.getItem(DISMISSED_KEY)) return;
+    if (Date.now() >= PROMOTION_END) return;
 
     const timer = window.setTimeout(() => setIsOpen(true), 900);
     return () => window.clearTimeout(timer);
@@ -34,7 +33,6 @@ export default function PromotionPopup() {
   }, [isOpen]);
 
   const closePopup = () => {
-    sessionStorage.setItem(DISMISSED_KEY, "true");
     setIsOpen(false);
   };
 
