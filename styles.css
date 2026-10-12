@@ -6186,6 +6186,7 @@ a {
   .banner__inner {
     flex-direction: column;
     gap: 18px;
+    padding-bottom: calc(160px + env(safe-area-inset-bottom));
   }
 
   .banner__visual {
