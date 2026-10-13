@@ -50,6 +50,10 @@ export default function About({
             />
           </div>
 
+          <p className="about__student-offer">
+            Students get <strong>10% OFF</strong> with a valid Student ID!
+          </p>
+
           <div className="about__seal" aria-hidden="true">
             <span>Miu Miu</span>
             <strong>MM</strong>
