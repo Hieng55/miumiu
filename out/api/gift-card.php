@@ -49,11 +49,18 @@ $phone = clean_field($data, 'phone', 40);
 $purchaseDate = clean_field($data, 'purchaseDate', 10);
 $amount = (int) ($data['amount'] ?? 0);
 
+if (!preg_match("/^[\p{L}\p{M}][\p{L}\p{M} .'-]*$/u", $firstName) || !preg_match("/^[\p{L}\p{M}][\p{L}\p{M} .'-]*$/u", $lastName)) {
+    respond(422, 'Please enter a valid first and last name.');
+}
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     respond(422, 'Please enter a valid email address.');
 }
 if (!preg_match('/^[0-9+().\-\s]{7,40}$/', $phone)) {
     respond(422, 'Please enter a valid phone number.');
+}
+$phoneDigits = preg_replace('/\D/', '', $phone);
+if (!is_string($phoneDigits) || strlen($phoneDigits) < 10 || strlen($phoneDigits) > 15) {
+    respond(422, 'Please enter a valid 10 to 15 digit phone number.');
 }
 $dateParts = [];
 if (!preg_match('/^(\d{4})-(\d{2})-(\d{2})$/', $purchaseDate, $dateParts)) {

@@ -13,7 +13,13 @@ const openingHours = [
   { day: "Sunday", time: "09:00 – 19:00" },
 ] as const;
 
-export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
+export default function About({
+  headingLevel = "h2",
+  teamHref = "/about#our-team",
+}: {
+  headingLevel?: "h1" | "h2";
+  teamHref?: string;
+}) {
   const [today, setToday] = useState<string | null>(null);
   const Heading = headingLevel;
 
@@ -163,6 +169,9 @@ export default function About({ headingLevel = "h2" }: { headingLevel?: "h1" | "
           <div className="about__actions">
             <a className="about__button" href="https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9">
               Book an appointment
+            </a>
+            <a className="about__button about__button--outline about__team-link" href={teamHref}>
+              Meet our team <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
