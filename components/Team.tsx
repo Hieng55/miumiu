@@ -37,15 +37,21 @@ const teamMembers = [
   },
 ] as const;
 
-export default function Team() {
+export default function Team({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
+  const Heading = headingLevel;
+
   return (
     <section className="team" id="our-team" aria-labelledby="team-title">
       <span className="team__watermark" aria-hidden="true">Team</span>
       <div className="team__inner">
+        <div className="team__featured-label">
+          <span aria-hidden="true">✦</span>
+          Meet the people behind every beautiful set
+        </div>
         <header className="team__header">
           <div>
             <p className="team__eyebrow"><span /> The artists behind your look <span /></p>
-            <h2 id="team-title">Meet our <em>talented team.</em></h2>
+            <Heading id="team-title">Meet our <em>talented team.</em></Heading>
           </div>
           <p>
             Find the artist whose specialties match your visit. Every member of

@@ -4,6 +4,7 @@ import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
 import HomeGiftCardPromo from "@/components/HomeGiftCardPromo";
+import HomeTeamPromo from "@/components/HomeTeamPromo";
 import Services from "@/components/Services";
 import { homeStructuredData, searchRobots } from "@/lib/site";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <main id="main-content">
         <Banner />
         <About />
+        <HomeTeamPromo />
         <Services />
         <HomeGiftCardPromo />
         <Gallery />

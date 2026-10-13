@@ -23,22 +23,22 @@ const primaryLinks: NavItem[] = [
 ];
 
 const secondaryLinks: NavItem[] = [
+  { label: "Our Team", href: "/our-team" },
   { label: "Contact us", href: "/contact" },
   { label: "Policy", href: "/policy" },
   { label: "Booking", href: "https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9" },
-  { label: "Directions", href: "/contact#location" },
 ];
 
 const mobileLinks: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about" },
+  { label: "Our Team", href: "/our-team" },
   { label: "Services", href: "/services" },
   { label: "Gift Cards", href: "/gift-cards" },
   { label: "Booking", href: "https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact us", href: "/contact" },
   { label: "Policy", href: "/policy" },
-  { label: "Directions", href: "/contact#location" },
 ];
 
 const appLinks = [

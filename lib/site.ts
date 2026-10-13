@@ -15,7 +15,7 @@ export const siteConfig = {
     addressCountry: "US",
   },
   logo: "/image/logo-miu-miu.webp",
-  socialImage: "/image/banner/banner-main.webp",
+  socialImage: "/image/services/articial.png",
   sameAs: [
     "https://www.facebook.com/miumiunaildesign/",
     "https://www.instagram.com/miumiunaildesign/",
@@ -108,7 +108,7 @@ export const homeStructuredData = {
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Friday", "Saturday", "Sunday"],
+          dayOfWeek: ["Friday", "Saturday"],
           opens: "09:00",
           closes: "19:00",
         },

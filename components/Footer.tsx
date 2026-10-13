@@ -3,6 +3,7 @@ import Image from "next/image";
 const footerLinks = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about" },
+  { label: "Our Team", href: "/our-team" },
   { label: "Services", href: "/services" },
   { label: "Gift Cards", href: "/gift-cards" },
   { label: "Gallery", href: "/gallery" },
@@ -66,7 +67,8 @@ export default function Footer() {
           <div className="footer__column footer__hours">
             <p>Opening hours</p>
             <div><span>Mon - Thu</span><strong>9:30 AM - 7 PM</strong></div>
-            <div><span>Fri - Sun</span><strong>9 AM - 7 PM</strong></div>
+            <div><span>Fri - Sat</span><strong>9 AM - 7 PM</strong></div>
+            <div><span>Sunday</span><strong>Closed</strong></div>
           </div>
         </div>
 

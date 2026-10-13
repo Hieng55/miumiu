@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Team from "@/components/Team";
 import { createPageMetadata } from "@/lib/site";
 
 export const metadata = createPageMetadata({
@@ -10,5 +9,5 @@ export const metadata = createPageMetadata({
 });
 
 export default function AboutPage() {
-  return <main id="main-content"><About headingLevel="h1" teamHref="#our-team" /><Team /></main>;
+  return <main id="main-content"><About headingLevel="h1" /></main>;
 }

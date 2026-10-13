@@ -42,7 +42,7 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
               <span className="contact__detail-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 7v5l3.2 2" /></svg>
               </span>
-              <span><small>Opening hours</small><strong>Mon–Thu 9:30 AM–7 PM<br />Fri–Sun 9 AM–7 PM</strong></span>
+              <span><small>Opening hours</small><strong>Mon–Thu 9:30 AM–7 PM<br />Fri–Sat 9 AM–7 PM<br />Sunday Closed</strong></span>
             </div>
           </address>
 
@@ -73,7 +73,7 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
           <span>Visit our salon</span>
           <h3>1150 El Camino Real</h3>
           <p>Menlo Park, CA 94025</p>
-          <small>Directions will be updated soon</small>
+          <small>Located in the heart of Menlo Park</small>
         </address>
       </div>
     </section>
