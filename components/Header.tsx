@@ -132,7 +132,7 @@ export default function Header() {
 
         <Link className="brand" href="/" aria-label="Miu Miu Nail Design home">
           <Image
-            src="/image/clear-logo.webp"
+              src="/image/logo-miu-miu.webp"
             alt="Miu Miu Nail Design"
             width={420}
             height={435}

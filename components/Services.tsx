@@ -6,7 +6,7 @@ const serviceCategories = [
     number: "01",
     title: "Pedicure",
     description: "Signature spa pedicures created for comfort, renewal, and a beautifully polished finish.",
-    image: "/image/services/home-pedicure.webp",
+    image: "/image/services/pedicure.png",
     alt: "Relaxing professional pedicure care",
   },
   {
@@ -14,7 +14,7 @@ const serviceCategories = [
     number: "02",
     title: "Manicure",
     description: "Detailed hand and nail care with elegant finishes designed around your personal style.",
-    image: "/image/services/home-manicure.webp",
+    image: "/image/services/maincure.png",
     alt: "Professional manicure treatment",
   },
   {
@@ -22,7 +22,7 @@ const serviceCategories = [
     number: "03",
     title: "Artificial Nails",
     description: "Refined length, strength, and structure with modern enhancement techniques and finishes.",
-    image: "/image/services/artificial-nails.png",
+    image: "/image/services/articial.png",
     alt: "Luxury artificial nail design",
   },
   {
@@ -30,7 +30,7 @@ const serviceCategories = [
     number: "04",
     title: "Dipping & Additional Services",
     description: "Dipping options and thoughtful finishing services for a complete, long-lasting result.",
-    image: "/image/services/additional-services.webp",
+    image: "/image/services/dipping.png",
     alt: "Detailed dipping powder nail design",
   },
   {
@@ -38,7 +38,7 @@ const serviceCategories = [
     number: "05",
     title: "Facial Relaxing Services",
     description: "Restorative facial experiences designed to cleanse, hydrate, and leave your skin refreshed.",
-    image: "/image/services/facial-relaxing-new.webp",
+    image: "/image/services/facial.png",
     alt: "Relaxing facial and beauty care",
   },
   {
@@ -46,7 +46,7 @@ const serviceCategories = [
     number: "06",
     title: "Waxing Services",
     description: "Gentle, precise waxing care for a smooth finish and beautifully maintained appearance.",
-    image: "/image/services/waxing.jpg",
+    image: "/image/services/waxing.png",
     alt: "Professional beauty and waxing care",
   },
 ] as const;

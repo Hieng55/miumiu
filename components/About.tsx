@@ -43,19 +43,11 @@ export default function About({
         <div className="about__visual">
           <div className="about__image about__image--main">
             <Image
-              src="/image/about-us/student-discount-salon.webp"
-              alt="Friends presenting student IDs while checking in at the nail salon"
+              src="/image/about-us/student-discount.png"
+              alt="Student ID promotion offering 10 percent off"
               fill
               sizes="(max-width: 900px) 82vw, 520px"
             />
-            <div className="about__student-offer" aria-label="Student ID discount: 10 percent off">
-              <span className="about__student-kicker">Student Exclusive</span>
-              <div className="about__student-value" aria-hidden="true">
-                <strong>10</strong><sup>%</sup>
-              </div>
-              <span className="about__student-label">Off</span>
-              <small>Present a valid student ID</small>
-            </div>
           </div>
 
           <div className="about__seal" aria-hidden="true">

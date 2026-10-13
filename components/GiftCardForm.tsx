@@ -237,7 +237,7 @@ export default function GiftCardForm() {
             <div className="gift-card__preview-top">
               <span className="gift-card__preview-logo">
                 <Image
-                  src="/image/clear-logo.webp"
+                  src="/image/logo-miu-miu.webp"
                   alt="Miu Miu Nail Design"
                   width={420}
                   height={435}

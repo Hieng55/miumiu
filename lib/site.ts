@@ -14,7 +14,7 @@ export const siteConfig = {
     postalCode: "94025",
     addressCountry: "US",
   },
-  logo: "/image/clear-logo.webp",
+  logo: "/image/logo-miu-miu.webp",
   socialImage: "/image/banner/banner-main.webp",
   sameAs: [
     "https://www.facebook.com/miumiunaildesign/",

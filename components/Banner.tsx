@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const slides = [
   {
     image: "/image/banner/banner-main.webp",
-    frameImage: "/image/banner/frame-flower-nails.webp",
+    frameImage: "/image/banner/12.png",
     alt: "Luxury white and gold manicure",
     eyebrow: "Miu Miu Nail Design · Menlo Park",
     title: "Modern Nails",
@@ -28,7 +28,7 @@ const slides = [
   },
   {
     image: "/image/banner/banner-treatment.webp",
-    frameImage: "/image/banner/frame-spring-nails.webp",
+    frameImage: "/image/banner/3.png",
     alt: "Relaxing nail salon manicure service",
     eyebrow: "Relax · Refresh · Renew",
     title: "Your Beauty",
@@ -173,7 +173,7 @@ export default function Banner() {
         <div className="banner__contact">
           <span className="banner__contact-mark">
             <Image
-              src="/image/clear-logo.webp"
+              src="/image/logo-miu-miu.webp"
               alt=""
               width={46}
               height={48}

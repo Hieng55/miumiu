@@ -3,6 +3,7 @@ import About from "@/components/About";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
+import HomeGiftCardPromo from "@/components/HomeGiftCardPromo";
 import Services from "@/components/Services";
 import { homeStructuredData, searchRobots } from "@/lib/site";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Banner />
         <About />
         <Services />
+        <HomeGiftCardPromo />
         <Gallery />
         <Contact />
       </main>

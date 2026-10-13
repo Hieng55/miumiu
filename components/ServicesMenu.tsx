@@ -30,7 +30,7 @@ const categories: readonly ServiceCategory[] = [
     number: "01",
     title: "Pedicure",
     intro: "Five levels of foot and nail care, from a polished refresh to an extended relaxation ritual.",
-    image: "/image/services/home-pedicure.webp",
+    image: "/image/services/pedicure.png",
     imageAlt: "Relaxing professional pedicure care",
     groups: [{
       title: "Pedicure treatments",
@@ -49,7 +49,7 @@ const categories: readonly ServiceCategory[] = [
     number: "02",
     title: "Manicure",
     intro: "Thoughtful hand and nail care with massage, hydration, and polish options for every schedule.",
-    image: "/image/services/home-manicure.webp",
+    image: "/image/services/maincure.png",
     imageAlt: "Professional manicure treatment",
     groups: [{
       title: "Manicure treatments",
@@ -67,7 +67,7 @@ const categories: readonly ServiceCategory[] = [
     number: "03",
     title: "Artificial Nails",
     intro: "Full sets and fill-ins with acrylic, builder gel, Gel-X, ombre, glitter, and custom design options.",
-    image: "/image/services/artificial-nails.png",
+    image: "/image/services/articial.png",
     imageAlt: "Luxury artificial nail design",
     groups: [
       {
@@ -104,7 +104,7 @@ const categories: readonly ServiceCategory[] = [
     number: "04",
     title: "Dipping & Additional Services",
     intro: "Dipping options, polish changes, removals, and a simple menu created especially for younger guests.",
-    image: "/image/services/additional-services.webp",
+    image: "/image/services/dipping.png",
     imageAlt: "Detailed dipping powder nail design",
     groups: [
       {
@@ -143,7 +143,7 @@ const categories: readonly ServiceCategory[] = [
     number: "05",
     title: "Facial Relaxing Services",
     intro: "Cleansing, exfoliation, hydration, massage, and targeted finishing steps for a refreshed complexion.",
-    image: "/image/services/facial-relaxing-new.webp",
+    image: "/image/services/facial.png",
     imageAlt: "Relaxing facial and beauty care",
     groups: [{
       title: "Facial treatments",
@@ -159,7 +159,7 @@ const categories: readonly ServiceCategory[] = [
     number: "06",
     title: "Waxing Services",
     intro: "Focused waxing services plus practical nail and massage add-ons to complete your appointment.",
-    image: "/image/services/waxing.jpg",
+    image: "/image/services/waxing.png",
     imageAlt: "Professional beauty and waxing care",
     groups: [
       {

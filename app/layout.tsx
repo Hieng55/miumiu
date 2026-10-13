@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [{ url: siteConfig.logo, type: "image/webp" }],
-    apple: [{ url: "/image/clear%20logo%20Miu%20Miu.png", type: "image/png" }],
+    apple: [{ url: "/image/logo-miu-miu.png", type: "image/png" }],
   },
   openGraph: {
     type: "website",
