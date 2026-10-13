@@ -4,6 +4,7 @@ const footerLinks = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Gift Cards", href: "/gift-cards" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact us", href: "/contact" },
   { label: "Salon policy", href: "/policy" },

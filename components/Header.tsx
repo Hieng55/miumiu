@@ -19,6 +19,7 @@ const primaryLinks: NavItem[] = [
   { label: "About us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Gift Cards", href: "/gift-cards" },
 ];
 
 const secondaryLinks: NavItem[] = [
@@ -32,6 +33,7 @@ const mobileLinks: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Gift Cards", href: "/gift-cards" },
   { label: "Booking", href: "https://www.lldtek.org/salon/appt/UTBGZk1USTBOVFU9" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact us", href: "/contact" },

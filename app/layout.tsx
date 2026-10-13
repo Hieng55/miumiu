@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import PromotionPopup from "@/components/PromotionPopup";
 import ScrollToTop from "@/components/ScrollToTop";
 import { siteConfig } from "@/lib/site";
+import "sweetalert2/dist/sweetalert2.min.css";
 import "../styles.css";
 
 const forum = Forum({

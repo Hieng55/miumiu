@@ -16,6 +16,7 @@
 
 # environment files
 .env*
+/telegram-config.php
 
 # TypeScript
 *.tsbuildinfo
