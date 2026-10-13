@@ -67,7 +67,7 @@ const categories: readonly ServiceCategory[] = [
     number: "03",
     title: "Artificial Nails",
     intro: "Full sets and fill-ins with acrylic, builder gel, Gel-X, ombre, glitter, and custom design options.",
-    image: "/image/services/home-artificial-nails.webp",
+    image: "/image/services/artificial-nails.png",
     imageAlt: "Luxury artificial nail design",
     groups: [
       {
@@ -159,7 +159,7 @@ const categories: readonly ServiceCategory[] = [
     number: "06",
     title: "Waxing Services",
     intro: "Focused waxing services plus practical nail and massage add-ons to complete your appointment.",
-    image: "/image/services/waxing-new.webp",
+    image: "/image/services/waxing.jpg",
     imageAlt: "Professional beauty and waxing care",
     groups: [
       {

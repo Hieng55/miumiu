@@ -22,7 +22,7 @@ const serviceCategories = [
     number: "03",
     title: "Artificial Nails",
     description: "Refined length, strength, and structure with modern enhancement techniques and finishes.",
-    image: "/image/services/home-artificial-nails.webp",
+    image: "/image/services/artificial-nails.png",
     alt: "Luxury artificial nail design",
   },
   {
@@ -46,7 +46,7 @@ const serviceCategories = [
     number: "06",
     title: "Waxing Services",
     description: "Gentle, precise waxing care for a smooth finish and beautifully maintained appearance.",
-    image: "/image/services/waxing-new.webp",
+    image: "/image/services/waxing.jpg",
     alt: "Professional beauty and waxing care",
   },
 ] as const;
