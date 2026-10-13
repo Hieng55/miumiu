@@ -66,8 +66,8 @@ export default function Footer() {
 
           <div className="footer__column footer__hours">
             <p>Opening hours</p>
-            <div><span>Mon - Thu</span><strong>9:30 AM - 7 PM</strong></div>
-            <div><span>Fri - Sat</span><strong>9 AM - 7 PM</strong></div>
+            <div><span>Monday–Thursday</span><strong>9:30 AM–7:00 PM</strong></div>
+            <div><span>Friday–Saturday</span><strong>9:00 AM–7:00 PM</strong></div>
             <div><span>Sunday</span><strong>Closed</strong></div>
           </div>
         </div>

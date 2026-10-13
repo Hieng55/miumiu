@@ -42,7 +42,7 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
               <span className="contact__detail-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 7v5l3.2 2" /></svg>
               </span>
-              <span><small>Opening hours</small><strong>Mon–Thu 9:30 AM–7 PM<br />Fri–Sat 9 AM–7 PM<br />Sunday Closed</strong></span>
+              <span><small>Opening hours</small><strong>Monday–Thursday | 9:30 AM–7:00 PM<br />Friday–Saturday | 9:00 AM–7:00 PM<br />Sunday | Closed</strong></span>
             </div>
           </address>
 

@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const openingHours = [
-  { day: "Monday", time: "09:30 – 19:00" },
-  { day: "Tuesday", time: "09:30 – 19:00" },
-  { day: "Wednesday", time: "09:30 – 19:00" },
-  { day: "Thursday", time: "09:30 – 19:00" },
-  { day: "Friday", time: "09:00 – 19:00" },
-  { day: "Saturday", time: "09:00 – 19:00" },
+  { day: "Monday", time: "9:30 AM – 7:00 PM" },
+  { day: "Tuesday", time: "9:30 AM – 7:00 PM" },
+  { day: "Wednesday", time: "9:30 AM – 7:00 PM" },
+  { day: "Thursday", time: "9:30 AM – 7:00 PM" },
+  { day: "Friday", time: "9:00 AM – 7:00 PM" },
+  { day: "Saturday", time: "9:00 AM – 7:00 PM" },
   { day: "Sunday", time: "Closed" },
 ] as const;
 
