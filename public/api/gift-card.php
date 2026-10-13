@@ -55,9 +55,14 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 if (!preg_match('/^[0-9+().\-\s]{7,40}$/', $phone)) {
     respond(422, 'Please enter a valid phone number.');
 }
-if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $purchaseDate)) {
+$dateParts = [];
+if (!preg_match('/^(\d{4})-(\d{2})-(\d{2})$/', $purchaseDate, $dateParts)) {
     respond(422, 'Please enter a valid purchase date.');
 }
+if (!checkdate((int) $dateParts[2], (int) $dateParts[3], (int) $dateParts[1])) {
+    respond(422, 'Please enter a valid purchase date.');
+}
+$formattedPurchaseDate = $dateParts[2] . '/' . $dateParts[3] . '/' . $dateParts[1];
 if (!in_array($amount, [50, 100, 150, 200, 250], true)) {
     respond(422, 'Please choose a valid gift card amount.');
 }
@@ -93,6 +98,8 @@ function escape_html(string $value): string
 }
 
 $fullName = strtoupper($firstName . ' ' . $lastName);
+$salonTime = new DateTimeImmutable('now', new DateTimeZone('America/Los_Angeles'));
+
 $message = implode("\n", [
     '🎁 <b>NEW GIFT CARD REQUEST</b>',
     '',
@@ -100,9 +107,9 @@ $message = implode("\n", [
     '👤 <b>Name:</b> ' . escape_html($fullName),
     '✉️ <b>Email:</b> ' . escape_html($email),
     '📞 <b>Phone:</b> ' . escape_html($phone),
-    '📅 <b>Purchase date:</b> ' . escape_html($purchaseDate),
+    '📅 <b>Purchase date:</b> ' . escape_html($formattedPurchaseDate),
     '',
-    'Submitted: ' . gmdate('M j, Y g:i A') . ' UTC',
+    'Submitted: ' . $salonTime->format('M j, Y g:i A T'),
 ]);
 
 $telegramUrl = 'https://api.telegram.org/bot' . rawurlencode($botToken) . '/sendMessage';

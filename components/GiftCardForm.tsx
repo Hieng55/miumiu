@@ -18,10 +18,21 @@ type FormDetails = {
 
 type GiftCardDetails = FormDetails & { amount: string };
 
-function localDate() {
+function salonDate() {
   const now = new Date();
-  const offset = now.getTimezoneOffset() * 60_000;
-  return new Date(now.getTime() - offset).toISOString().slice(0, 10);
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(now);
+  const value = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
+
+function displayDate(value: string) {
+  const [year, month, day] = value.split("-");
+  return year && month && day ? `${month}/${day}/${year}` : "Select a date";
 }
 
 const initialDetails: FormDetails = {
@@ -29,7 +40,7 @@ const initialDetails: FormDetails = {
   lastName: "",
   email: "",
   phone: "",
-  purchaseDate: localDate(),
+  purchaseDate: salonDate(),
 };
 
 export default function GiftCardForm() {
@@ -45,9 +56,7 @@ export default function GiftCardForm() {
 
   const enteredName = `${formDetails.firstName} ${formDetails.lastName}`.trim();
   const cardName = enteredName ? enteredName.toLocaleUpperCase("en-US") : "Someone special";
-  const cardDate = formDetails.purchaseDate
-    ? new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${formDetails.purchaseDate}T00:00:00Z`))
-    : "Select a date";
+  const cardDate = displayDate(formDetails.purchaseDate);
 
   function updateField(field: keyof FormDetails, value: string) {
     setFormDetails((current) => ({ ...current, [field]: value }));
@@ -123,7 +132,7 @@ export default function GiftCardForm() {
   }
 
   const textMessage = details
-    ? `Hi Miu Miu Nail Design, I would like to purchase a ${details.amount} gift card. Name: ${details.firstName} ${details.lastName}. Email: ${details.email}. Phone: ${details.phone}. Purchase date: ${details.purchaseDate}.`
+    ? `Hi Miu Miu Nail Design, I would like to purchase a ${details.amount} gift card. Name: ${details.firstName} ${details.lastName}. Email: ${details.email}. Phone: ${details.phone}. Purchase date: ${displayDate(details.purchaseDate)}.`
     : "";
 
   return (
