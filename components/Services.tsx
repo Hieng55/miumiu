@@ -6,7 +6,7 @@ const serviceCategories = [
     number: "01",
     title: "Pedicure",
     description: "Signature spa pedicures created for comfort, renewal, and a beautifully polished finish.",
-    image: "/image/services/pedicure.png",
+    image: "/image/services/pedicure.png?v=20261014",
     alt: "Relaxing professional pedicure care",
   },
   {

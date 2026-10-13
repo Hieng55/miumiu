@@ -30,7 +30,7 @@ const categories: readonly ServiceCategory[] = [
     number: "01",
     title: "Pedicure",
     intro: "Five levels of foot and nail care, from a polished refresh to an extended relaxation ritual.",
-    image: "/image/services/pedicure.png",
+    image: "/image/services/pedicure.png?v=20261014",
     imageAlt: "Relaxing professional pedicure care",
     groups: [{
       title: "Pedicure treatments",
