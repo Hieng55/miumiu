@@ -111,7 +111,7 @@ export default function About({
                 <h3 id="hours-title">Opening Hours</h3>
               </div>
               {todayHours && (
-                <div className={`about__today${todayHours.time === "Closed" ? " is-closed" : ""}`}>
+                <div className="about__today">
                   <svg className="about__today-icon" viewBox="0 0 24 24" aria-hidden="true">
                     <rect x="3.5" y="5.5" width="17" height="15" rx="3" />
                     <path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17" />
@@ -128,10 +128,9 @@ export default function About({
             <dl className="about__hours-list">
               {openingHours.map(({ day, time }) => {
                 const isToday = day === today;
-                const isClosed = time === "Closed";
                 return (
                   <div
-                    className={[isToday && "is-today", isClosed && "is-closed"].filter(Boolean).join(" ") || undefined}
+                    className={isToday ? "is-today" : undefined}
                     key={day}
                   >
                     <dt>{day}{isToday && <small>Today</small>}</dt>
