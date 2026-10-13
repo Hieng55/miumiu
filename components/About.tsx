@@ -10,7 +10,7 @@ const openingHours = [
   { day: "Thursday", time: "9:30 AM – 7:00 PM" },
   { day: "Friday", time: "9:00 AM – 7:00 PM" },
   { day: "Saturday", time: "9:00 AM – 7:00 PM" },
-  { day: "Sunday", time: "Closed" },
+  { day: "Sunday", time: "9:00 AM – 7:00 PM" },
 ] as const;
 
 export default function About({

@@ -108,7 +108,7 @@ export const homeStructuredData = {
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Friday", "Saturday"],
+          dayOfWeek: ["Friday", "Saturday", "Sunday"],
           opens: "09:00",
           closes: "19:00",
         },
