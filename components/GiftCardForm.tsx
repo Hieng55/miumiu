@@ -131,10 +131,6 @@ export default function GiftCardForm() {
     }
   }
 
-  const textMessage = details
-    ? `Hi Miu Miu Nail Design, I would like to purchase a ${details.amount} gift card. Name: ${details.firstName} ${details.lastName}. Email: ${details.email}. Phone: ${details.phone}. Purchase date: ${displayDate(details.purchaseDate)}.`
-    : "";
-
   return (
     <section className="gift-card__hero" aria-labelledby="gift-card-title">
       <div className="gift-card__intro">
@@ -205,10 +201,7 @@ export default function GiftCardForm() {
               is for <strong>{details.amount}</strong> under {details.firstName} {details.lastName}.
             </p>
             <div className="gift-card__confirmation-actions">
-              <a href={`sms:+14089603611?&body=${encodeURIComponent(textMessage)}`}>
-                Text this request <span aria-hidden="true">→</span>
-              </a>
-              <a className="is-outline" href="tel:+14089603611">
+              <a href="tel:+14089603611">
                 <Phone aria-hidden="true" /> Call (408) 960-3611
               </a>
             </div>
