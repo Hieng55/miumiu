@@ -31,12 +31,16 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
               <span><small>Call us</small><strong>(408) 960-3611</strong></span>
             </a>
 
-            <div>
+            <a
+              href="https://maps.google.com/?cid=18252151764535503993"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="contact__detail-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 21s6-5.45 6-12a6 6 0 1 0-12 0c0 6.55 6 12 6 12Z" /><circle cx="12" cy="9" r="2.2" /></svg>
               </span>
               <span><small>Find us</small><strong>1150 El Camino Real<br />Menlo Park, CA 94025</strong></span>
-            </div>
+            </a>
 
             <div>
               <span className="contact__detail-icon" aria-hidden="true">
@@ -74,6 +78,16 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
           <h3>1150 El Camino Real</h3>
           <p>Menlo Park, CA 94025</p>
           <small>Located in the heart of Menlo Park</small>
+          <a
+            href="https://maps.google.com/?cid=18252151764535503993"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Miu Miu Nail Design in Google Maps"
+          >
+            <img src="/icons/google-maps.svg" alt="" aria-hidden="true" />
+            <span><small>Google Maps</small><strong>Get directions</strong></span>
+            <b aria-hidden="true">&rarr;</b>
+          </a>
         </address>
       </div>
     </section>
