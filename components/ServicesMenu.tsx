@@ -284,7 +284,7 @@ export default function ServicesMenu() {
                         <div className="services-menu__item-line">
                           <div><h4>{item.name}</h4>{item.duration && <small>{item.duration}</small>}</div>
                           <div className="services-menu__prices">
-                            <span><small>Card</small><b>{item.card}</b></span>
+                            <span><small>Regular price</small><b>{item.card}</b></span>
                             <span className="is-cash"><small>Cash</small><b>{item.cash}</b></span>
                           </div>
                         </div>
