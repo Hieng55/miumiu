@@ -61,7 +61,7 @@ export default function Footer() {
             <address>
               1150 El Camino Real<br />Menlo Park, CA 94025
             </address>
-            <a href="tel:+14089603611">(408) 960-3611</a>
+            <a href="tel:+16507396575">(650) 739-6575</a>
           </div>
 
           <div className="footer__column footer__hours">

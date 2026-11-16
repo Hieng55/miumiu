@@ -5,8 +5,8 @@ export const siteConfig = {
   url: "https://miumiunaildesign.com",
   description:
     "A welcoming nail and beauty salon in Menlo Park offering manicures, pedicures, nail enhancements, facials, and waxing services.",
-  phone: "+14089603611",
-  displayPhone: "(408) 960-3611",
+  phone: "+16507396575",
+  displayPhone: "(650) 739-6575",
   address: {
     streetAddress: "1150 El Camino Real",
     addressLocality: "Menlo Park",

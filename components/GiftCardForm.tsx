@@ -281,8 +281,8 @@ export default function GiftCardForm() {
               is for <strong>{details.amount}</strong> under {details.firstName} {details.lastName}.
             </p>
             <div className="gift-card__confirmation-actions">
-              <a href="tel:+14089603611">
-                <Phone aria-hidden="true" /> Call (408) 960-3611
+              <a href="tel:+16507396575">
+                <Phone aria-hidden="true" /> Call (650) 739-6575
               </a>
             </div>
             <button type="button" onClick={() => setDetails(null)}>Edit details</button>

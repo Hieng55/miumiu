@@ -142,7 +142,7 @@ export default function Banner() {
           </h1>
           <p className="banner__description">{slide.description}</p>
           <div className="banner__actions">
-            <a className="banner__button banner__button--primary" href="tel:+14089603611">
+            <a className="banner__button banner__button--primary" href="tel:+16507396575">
               Call now
             </a>
             <a

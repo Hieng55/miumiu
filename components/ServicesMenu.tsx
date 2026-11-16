@@ -73,7 +73,7 @@ const categories: readonly ServiceCategory[] = [
       {
         title: "Full set",
         items: [
-          { name: "Color Acrylic", card: "$61.50+", cash: "$60+" },
+          { name: "Color Acrylic", card: "$71.75+", cash: "$70+" },
           { name: "Color Acrylic + Design", card: "$71.75+", cash: "$70+" },
           { name: "Ombre / Glitter / Pink & White", card: "$71.75+", cash: "$70+" },
           { name: "Ombre / Glitter / Pink & White + Design", card: "$71.75+", cash: "$70+" },
@@ -87,7 +87,7 @@ const categories: readonly ServiceCategory[] = [
         title: "Fill in",
         note: "Design pricing varies by selected design and is quoted before service.",
         items: [
-          { name: "Color Acrylic", card: "$56.38+", cash: "$55+" },
+          { name: "Color Acrylic", card: "$66.60+", cash: "$65+" },
           { name: "Color Acrylic + Design", card: "$71.75+", cash: "$70+" },
           { name: "Gel Acrylic", card: "$56.38+", cash: "$55+" },
           { name: "Ombre / Glitter / Pink & White", card: "$71.75+", cash: "$70+" },
@@ -150,7 +150,7 @@ const categories: readonly ServiceCategory[] = [
       items: [
         { name: "Deep Cleanse", duration: "60 mins", card: "$112.75", cash: "$110", details: ["Deep cleanse and gentle exfoliation", "Light extractions and facial massage", "Cooling and soothing hydro jelly mask", "LED therapy, moisturizer and SPF"] },
         { name: "Signature Facial", duration: "45 mins", card: "$61.50", cash: "$60", details: ["Double cleanse and exfoliation", "Steam and light extractions", "Facial massage and moisturizing mask", "Moisturizer and SPF"] },
-        { name: "Glow & Hydrate", duration: "50 mins", card: "$61.50", cash: "$60", details: ["Deep cleanse and gentle exfoliation", "Extractions and skin-tightening massage", "Cooling and soothing hydro jelly mask", "LED therapy, facial massage, moisturizer and SPF"] },
+        { name: "Glow and Hydrate", duration: "60 mins", card: "$92.25", cash: "$90", details: ["Deep cleanse", "Gentle exfoliation", "Light extractions", "Facial massage", "Instant cooling and soothing hydro jelly mask", "LED therapy", "Moisturizer", "SPF"] },
       ],
     }],
   },
@@ -326,7 +326,7 @@ export default function ServicesMenu() {
 
       <section className="services-menu__cta">
         <div><p>Need help choosing?</p><h2>Let us plan your next visit.</h2><span>Call our team and we will help you select the service that best fits the result you want.</span></div>
-        <a href="tel:+14089603611">Call (408) 960-3611</a>
+        <a href="tel:+16507396575">Call (650) 739-6575</a>
       </section>
     </main>
   );

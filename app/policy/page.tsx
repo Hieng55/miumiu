@@ -135,7 +135,7 @@ export default function PolicyPage() {
               team will do our best to assist you.
             </p>
           </div>
-          <a href="tel:+14089603611">Call (408) 960-3611</a>
+          <a href="tel:+16507396575">Call (650) 739-6575</a>
         </aside>
       </section>
     </main>

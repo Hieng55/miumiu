@@ -64,7 +64,7 @@ export default function PromotionPopup() {
         <Image
           className="promotion-popup__image"
           src="/image/popup/Flyer Miu Miu_page-0001.jpg"
-          alt="Miu Miu Nail Design grand opening offer: 10% off all services, valid until November 15, 2026. Call (408) 960-3611."
+          alt="Miu Miu Nail Design grand opening offer: 10% off all services, valid until November 15, 2026. Call (650) 739-6575."
           width={1240}
           height={1754}
           sizes="(max-width: 620px) calc(100vw - 28px), 540px"

@@ -24,11 +24,11 @@ export default function Contact({ headingLevel = "h2" }: { headingLevel?: "h1" |
           </p>
 
           <address className="contact__details">
-            <a href="tel:+14089603611">
+            <a href="tel:+16507396575">
               <span className="contact__detail-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M8.2 3.8 10 7.9 7.8 9.5c1.25 2.55 3.15 4.45 5.7 5.7l1.6-2.2 4.1 1.8v3c0 .75-.6 1.35-1.35 1.4C10.55 19.65 4.35 13.45 4.8 6.15c.05-.75.65-1.35 1.4-1.35h2Z" /></svg>
               </span>
-              <span><small>Call us</small><strong>(408) 960-3611</strong></span>
+              <span><small>Call us</small><strong>(650) 739-6575</strong></span>
             </a>
 
             <a

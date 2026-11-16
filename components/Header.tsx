@@ -184,8 +184,8 @@ export default function Header() {
         </nav>
 
         <div className="mobile-menu__footer">
-          <a className="mobile-call" href="tel:+14089603611">
-            (408) 960-3611
+          <a className="mobile-call" href="tel:+16507396575">
+            (650) 739-6575
           </a>
           <span
             className="mobile-address"
