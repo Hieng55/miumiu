@@ -149,7 +149,7 @@ const categories: readonly ServiceCategory[] = [
       title: "Facial treatments",
       items: [
         { name: "Deep Cleanse", duration: "60 mins", card: "$112.75", cash: "$110", details: ["Deep cleanse and gentle exfoliation", "Light extractions and facial massage", "Cooling and soothing hydro jelly mask", "LED therapy, moisturizer and SPF"] },
-        { name: "Signature Facial", duration: "45 mins", card: "$61.50", cash: "$60", details: ["Double cleanse and exfoliation", "Steam and light extractions", "Facial massage and moisturizing mask", "Moisturizer and SPF"] },
+        { name: "Signature Facial", duration: "45 mins", card: "$82", cash: "$80", details: ["Double cleanse and exfoliation", "Steam and light extractions", "Facial massage and moisturizing mask", "Moisturizer and SPF"] },
         { name: "Glow and Hydrate", duration: "60 mins", card: "$92.25", cash: "$90", details: ["Deep cleanse", "Gentle exfoliation", "Light extractions", "Facial massage", "Instant cooling and soothing hydro jelly mask", "LED therapy", "Moisturizer", "SPF"] },
       ],
     }],

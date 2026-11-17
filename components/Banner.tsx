@@ -175,8 +175,8 @@ export default function Banner() {
             <Image
               src="/image/logo-miu-miu.webp"
               alt=""
-              width={46}
-              height={48}
+              width={800}
+              height={751}
             />
           </span>
           <div>

@@ -134,8 +134,8 @@ export default function Header() {
           <Image
               src="/image/logo-miu-miu.webp"
             alt="Miu Miu Nail Design"
-            width={420}
-            height={435}
+            width={800}
+            height={751}
             priority
           />
         </Link>
