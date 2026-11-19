@@ -73,7 +73,7 @@ const categories: readonly ServiceCategory[] = [
       {
         title: "Full set",
         items: [
-          { name: "Color Acrylic", card: "$71.75+", cash: "$70+" },
+          { name: "Color Acrylic", card: "$66.60+", cash: "$65+" },
           { name: "Color Acrylic + Design", card: "$71.75+", cash: "$70+" },
           { name: "Ombre / Glitter / Pink & White", card: "$71.75+", cash: "$70+" },
           { name: "Ombre / Glitter / Pink & White + Design", card: "$71.75+", cash: "$70+" },
@@ -87,7 +87,7 @@ const categories: readonly ServiceCategory[] = [
         title: "Fill in",
         note: "Design pricing varies by selected design and is quoted before service.",
         items: [
-          { name: "Color Acrylic", card: "$66.60+", cash: "$65+" },
+          { name: "Color Acrylic", card: "$61.50+", cash: "$60+" },
           { name: "Color Acrylic + Design", card: "$71.75+", cash: "$70+" },
           { name: "Gel Acrylic", card: "$56.38+", cash: "$55+" },
           { name: "Ombre / Glitter / Pink & White", card: "$71.75+", cash: "$70+" },
