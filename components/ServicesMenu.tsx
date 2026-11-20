@@ -36,6 +36,7 @@ const categories: readonly ServiceCategory[] = [
       title: "Pedicure treatments",
       note: "Regular polish included. Dazzle Dry +$10. Gel polish +$15 cash / +$15.38 card.",
       items: [
+        { name: "No Color Pedicure", card: "$35.88", cash: "$35" },
         { name: "Herbal Detox Premium Healing Session", duration: "75 mins", card: "$122", cash: "$119", details: ["Herbal detox and Himalayan pink salt soak", "Nail shaping and cuticle care", "Soothing scrub and clay mask with steam", "Collagen socks and 25-minute oil candle massage"] },
         { name: "Cherry Blossom Treatment Pedicure", duration: "50 mins", card: "$81", cash: "$79", details: ["Cherry blossom bath bomb with soap flowers", "Nail shaping, cuticle and callus care", "Sea salt scrub and collagen mask", "Paraffin wax and 10-minute massage"] },
         { name: "Golden Luxury Pedicure", duration: "60 mins", card: "$101.50", cash: "$99", details: ["Sea salt soak with citrus fruits", "Nail shaping, cuticle and callus care", "Golden sugar scrub and collagen mask", "Collagen socks, 15-minute massage and body butter gift"] },
@@ -55,6 +56,7 @@ const categories: readonly ServiceCategory[] = [
       title: "Manicure treatments",
       note: "Regular polish included. Dazzle Dry +$10. Gel polish +$15.",
       items: [
+        { name: "Manicure", card: "$27.68", cash: "$27" },
         { name: "Rose Premium Manicure", duration: "60 mins", card: "$82", cash: "$80", details: ["Rose Himalayan salt soak with flowers and citrus", "Nail shaping, cuticle care and sugar scrub", "15-minute hand, neck and shoulder massage", "Collagen gloves and hand mask"] },
         { name: "Cherry Blossom Deluxe Manicure", duration: "50 mins", card: "$61.50", cash: "$60", details: ["Himalayan pink sea salt with citrus", "Nail shaping, cuticle care and sugar scrub", "10-minute hand, neck and shoulder massage", "Collagen moisturizing gloves"] },
         { name: "Lavender Deluxe Manicure", duration: "40 mins", card: "$46.10", cash: "$45", details: ["Lavender Himalayan pink salt bath", "Nail shaping and cuticle care", "8-minute hand, neck and shoulder massage", "Paraffin hand wax"] },
